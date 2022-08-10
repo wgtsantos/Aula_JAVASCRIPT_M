@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title> Aula 1 - Javascript </title>
+        <meta charset="utf-8"/>
+        <script type="text/javascript" src="validar2.js"> </script>
+
+        <style>
+            span {
+                color:#F00;
+                font-weight: bolder;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <form action="enviar.php" method="post" name="cad" >
+
+        <label> Nome: </label>
+        <input type="text" id="nome" name="nome" />
+        <span id="erro_nome"></span>
+        <br/> <br/>
+        <label> Telefone: </label>
+        <input type="tel" id="telefone" name="telefone"/>
+        <span id="erro_tel"></span>
+        <br/> <br/>
+        <label> Senha: </label>
+        <input type="password" id="senha" name="senha"/>
+        <span id="erro_senha"></span>
+        <br/> <br/>
+        <label> Confirma Senha: </label>
+        <input type="password" id="conf_senha" name="conf_senha"/>
+        <span id="erro_conf_senha"></span>
+        <br/> <br/>
+        <input type="submit" id="enviar" name="enviar" value="ENVIAR" 
+        onclick="return valid2()"/>
+
+        </form>
+
+    </body>
+
+</html>

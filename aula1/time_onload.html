@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title> Aula 1 - Time Out  </title>
+        <meta charset="utf-8"/>
+
+        <script type="text/javascript">
+
+            let tempo = setTimeout(mostra, 5000);
+            
+            function mostra() {
+
+                document.getElementById("mostrar").innerHTML = 
+                "<h2> Tempo esgotado!! </h2";
+                document.body.style.backgroundColor = "#F00";
+
+            }
+            
+        </script>
+    </head>
+
+    <body>
+
+        <div id="mostrar"></div>
+
+    </body>
+
+</html>

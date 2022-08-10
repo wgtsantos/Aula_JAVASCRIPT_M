@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title> Aula 1 - Javascript </title>
+        <meta charset="utf-8"/>
+
+        <script type="text/javascript">
+
+            function exibir() {
+
+            var num1 = document.cad.num1.value;
+            var num2 = document.cad.num2.value;
+
+            result = num1 + num2;
+
+            alert(result);
+
+            }
+
+        </script>
+    </head>
+
+    <body>
+
+        <form action="#" method="post" name="cad" >
+
+        <label> Digite um número: </label>
+        <input type="number" id="num1" name="num1"/>
+        <label> Digite outro número: </label>
+        <input type="number" id="num2" name="num2" />
+        <input type="submit" id="enviar" name="enviar" value="ENVIAR"
+        onclick="exibir()"/>
+
+        </form>
+
+    </body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title> Aula 1 - Javascript </title>
+        <meta charset="utf-8"/>
+        <script type="text/javascript" src="validar.js"> </script>
+    </head>
+
+    <body>
+
+        <form action="enviar.php" method="post" name="cad" >
+
+        <label> Nome: </label>
+        <input type="text" id="nome" name="nome" />
+        <br/> <br/>
+        <label> Telefone: </label>
+        <input type="tel" id="telefone" name="telefone"/>
+        <br/> <br/>
+        <label> Senha: </label>
+        <input type="password" id="senha" name="senha"/>
+        <br/> <br/>
+        <label> Confirma Senha: </label>
+        <input type="password" id="conf_senha" name="conf_senha"/>
+        <br/> <br/>
+        <input type="submit" id="enviar" name="enviar" value="ENVIAR" 
+        onclick="return valid()"/>
+
+        </form>
+
+    </body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title> Aula 1 - Javascript </title>
+        <meta charset="utf-8"/>
+    </head>
+
+    <body>
+
+        <form action="#" method="post" name="cad" >
+
+        <label> Comentário: </label>
+        <br/>
+        <textarea id="coment" name="coment" cols="40" rows="10" 
+        maxlength="240"></textarea>
+        <br/>
+        <span id="cont" style="font-weight: bolder;"> 240 </span> <span>
+        Caracteres restantes </span>
+        <br/><br/>
+        <input type="submit" id="enviar" name="enviar" value="ENVIAR"/>
+
+        </form>
+
+    </body>
+
+    <script type="text/javascript">
+
+        var textarea = document.querySelector("textarea");
+        textarea.addEventListener('keyup', contar);
+        var limite = 240;
+        var caracteres = document.getElementById("cont");
+
+        function contar() {
+            var num_caract = this.value.length;
+            var restante = limite - num_caract;
+
+            caracteres.innerHTML = restante;
+        }
+
+    </script>
+
+</html>

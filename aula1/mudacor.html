@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title> Aula 1 - Javascript </title>
+        <meta charset="utf-8"/>
+
+        <style>
+            div {
+                width: 180px;
+                height: 100px;
+                border: 1px solid #000;
+            }
+        </style>
+
+        <script type="text/javascript">
+
+            function mudar() {
+
+                var cor1 = document.getElementById("cor1").value;
+                var cor2 = document.getElementById("cor2").value;
+                var cor3 = document.getElementById("cor3").value;
+
+                document.getElementById("q1").style.backgroundColor = cor1;
+                document.getElementById("q2").style.backgroundColor = cor2;
+                document.getElementById("q3").style.backgroundColor = cor3;
+            }
+
+        </script>
+    </head>
+
+    <body>
+
+    <label> Informe uma cor: </label>
+    <input type="color" id="cor1" name="cor1"/>
+    <br/> <br/>
+    <div id="q1"></div>
+    <br/> <br/>
+
+    <label> Informe uma cor: </label>
+    <input type="color" id="cor2" name="cor2"/>
+    <br/> <br/>
+    <div id="q2"></div>
+    <br/> <br/>
+    
+    <label> Informe uma cor: </label>
+    <input type="color" id="cor3" name="cor3"/>
+    <br/> <br/>
+    <div id="q3"></div>
+    <br/> <br/>
+    <button type="submit" id="aplicar" name="aplicar" onclick="mudar()"> APLICAR </button>
+    </body>
+
+</html>
