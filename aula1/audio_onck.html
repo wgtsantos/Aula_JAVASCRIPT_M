@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title> Aula 1 - Document </title>
+        <meta charset="utf-8"/>
+
+    <script type="text/javascript">
+
+       
+        function tocar(som){
+
+            var uii = document.getElementById("txt");
+            var caav = document.getElementById("txt");
+
+            if(som == "uii") {
+                var ui = new Audio("uiiiii.mp3");
+                return [ui.play(), uii.innerHTML = "<h2> UUUIIIIIIIIIIIIIIII!!!</h2>"];
+            }
+
+            if(som == "ca") {
+                var cavalo = new Audio("cavalo.mp3");
+                return [cavalo.play(), caav.innerHTML = "<h2> CAVAAAALOOOOOO!!!</h2>"];
+            }
+        }
+
+    </script>
+
+    </head>
+
+    <body>
+
+            <button type="submit" id="enviar" name="enviar" onclick="tocar('uii')"> Da uma clicada aqui! </button>
+            <button type="submit" id="enviar" name="enviar" onclick="tocar('ca')"> Então Clica aqui! </button>
+            <div id="txt"></div>
+
+        </form>
+
+    </body>
+
+</html>
